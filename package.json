@@ -1,0 +1,29 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "A CLI appliation to find out the current weather and forecast without any npm dependencies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "weather": "bin/weather"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjrngn/weather-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "nodejs",
+    "weather",
+    "weather-cli",
+    "forecast"
+  ],
+  "author": "Vijay Rangan <vijay.rangan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vjrngn/weather-cli/issues"
+  },
+  "homepage": "https://github.com/vjrngn/weather-cli#readme"
+}
