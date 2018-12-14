@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-require('../index.js');
+
+const weather = require('../');
+
+weather(process.argv.slice(2));
