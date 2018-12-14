@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/vjrngn/weather-cli/issues"
   },
-  "homepage": "https://github.com/vjrngn/weather-cli#readme"
+  "homepage": "https://github.com/vjrngn/weather-cli#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "mock-stdin": "^0.3.1"
+  }
 }
