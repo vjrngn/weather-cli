@@ -4,7 +4,7 @@
   "description": "A CLI appliation to find out the current weather and forecast without any npm dependencies.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "bin": {
     "weather": "bin/weather"

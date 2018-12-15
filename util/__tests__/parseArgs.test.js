@@ -33,4 +33,13 @@ describe("parseArgs()", () => {
     });
     expect(typeof parsed.options.email).toBe("boolean");
   });
+
+  it("forces all option values to lowercase", () => {
+    const command = ["today", "--username=FOO", "--bar=BAZ", "--baz=QuUx"];
+    const parsed = parseArgs(command);
+
+    expect(parsed.options.username).toEqual("foo");
+    expect(parsed.options.bar).toEqual("baz");
+    expect(parsed.options.baz).toEqual("quux");
+  });
 });

@@ -12,10 +12,11 @@ module.exports = function parseArgs(args) {
     if (matches !== null) {
       // mathces[0] is the original phrase
       // matches[1] is '--'
-      const key = matches[2];
-      const value = matches[3];
+      const [_, __, key, value] = matches;
 
-      optionsObj[key] = isCastableToBoolean(value) ? Boolean(value) : value;
+      optionsObj[key] = isCastableToBoolean(value)
+        ? Boolean(value)
+        : String(value).toLowerCase();
     }
 
     return optionsObj;
